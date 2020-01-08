@@ -19,9 +19,16 @@ h1{
 }
 
 .result-container{
+    letter-spacing: 1px;
+    font-size: 12px;
     height: 30px;
     margin: 0px 300px;
     background-color: chartreuse;
+}
+
+.result-container #result{
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
 }
 
 #clipboard.btn{
@@ -60,7 +67,7 @@ h1{
 }
 
 #generate.btn.btn-large{
-    margin: 0px 82px 0px 82px;
+    width: 100%;
     background-color: chartreuse;
     color: black;
 }

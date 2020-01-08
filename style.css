@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    font-size: 75px;
+    padding: 20px 20px 20px 20px;
+    font-family: monospace;
+    color: #7fff00;
+}
+
+.container{
+    background-color: black;
+    border: 2px solid #80ff0096;
+    border-radius: 10px;
+    outline: none;
+    border-color: #80ff0096;
+    box-shadow: 0 0 10px #80ff0096;
+    margin-top: 150px;
+    height: 400px;
+    width: 200px;
+}
+
+.result-container{
+    height: 30px;
+    margin: 0px 300px;
+    background-color: chartreuse;
+}
+
+#clipboard.btn{
+    float: right;
+    font-size: 10px;
+    color: black;
+}
+
+.settings{
+    color: chartreuse;
+    margin: 20px 300px 20px 300px;
+}
+
+.setting{
+    padding: 5px 5px 5px 5px;
+}
+
+#length{
+    float: right;
+}
+
+#uppercase{
+    float: right;
+}
+
+#lowercase{
+    float: right;
+}
+
+#numbers{
+    float: right;
+}
+
+#symbols{
+    float: right;
+}
+
+#generate.btn.btn-large{
+    margin: 0px 82px 0px 82px;
+    background-color: chartreuse;
+    color: black;
+}
+
+body{
+    background-image: url(../passwordGenerator/images/683979.jpg);
+}

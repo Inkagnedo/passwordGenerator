@@ -1,77 +1,107 @@
-h1{
-    text-align: center;
-    font-size: 75px;
-    padding: 20px 20px 20px 20px;
-    font-family: monospace;
-    color: #7fff00;
+* {
+	box-sizing: border-box;
 }
 
-.container{
+body {
+    background-image: url(../passwordGenerator/images/683979.jpg);
+    background-color: black;
+    font-size: 30px;
+	color: chartreuse;
+	display: flex;
+	font-family: monospace;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+p {
+	margin: 5px 0;
+}
+
+h2 {
+	margin: 10px 0 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+.container {
     background-color: black;
     border: 2px solid #80ff0096;
     border-radius: 10px;
     outline: none;
     border-color: #80ff0096;
-    box-shadow: 0 0 10px #80ff0096;
-    margin-top: 150px;
-    height: 400px;
-    width: 200px;
+	box-shadow: 0 0 10px #80ff0096;
+	padding: 20px;
+	width: 650px;
+	max-width: 100%;
 }
 
-.result-container{
-    letter-spacing: 1px;
-    font-size: 12px;
-    height: 30px;
-    margin: 0px 300px;
-    background-color: chartreuse;
+.result-container {
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 50px;
+	width: 100%;
 }
 
-.result-container #result{
-    word-wrap: break-word;
-    max-width: calc(100% - 40px);
+.result-container #result {
+  	word-wrap: break-word;
+	max-width: calc(100% - 40px);
 }
 
-#clipboard.btn{
-    float: right;
-    font-size: 10px;
-    color: black;
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
 }
 
-.settings{
-    color: chartreuse;
-    margin: 20px 300px 20px 300px;
+.btn {
+    border: 2px solid #80ff0096;
+    border-radius: 10px;
+    outline: none;
+    border-color: #80ff0096;
+	color: black;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+	background-color: chartreuse;
 }
 
-.setting{
-    padding: 5px 5px 5px 5px;
+#clipboard.btn {
+    
+    padding: 0px;
+    font-size: 15px;
 }
 
-#length{
-    float: right;
-}
-
-#uppercase{
-    float: right;
-}
-
-#lowercase{
-    float: right;
-}
-
-#numbers{
-    float: right;
-}
-
-#symbols{
-    float: right;
-}
-
-#generate.btn.btn-large{
+.btn-large {
+	display: block;
     width: 100%;
-    background-color: chartreuse;
-    color: black;
+    font-family: monospace;
 }
 
-body{
-    background-image: url(../passwordGenerator/images/683979.jpg);
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
 }
